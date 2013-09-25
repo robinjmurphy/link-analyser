@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Analyser <% if @url %>- <%= @url %><% end %></title>
+    <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <div class="analyser">
+        <header>
+            <h1>Link analyser</h1>
+        </header>
+        <%= yield %>
+    </div>
+</body>
+</html>

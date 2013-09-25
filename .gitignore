@@ -1,0 +1,7 @@
+.bundle
+vendor
+spec/fixtures
+*.gem
+templates
+.ruby-version
+.ruby-gemset

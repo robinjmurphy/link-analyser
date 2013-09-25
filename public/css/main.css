@@ -1,0 +1,92 @@
+body {
+    font-family: Helvetica, Arial;
+    margin: 0;
+    padding: 2em;
+    background: #eee;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: #009999;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #FF7400;
+    text-decoration: underline;
+
+}
+
+.analyser {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+input {
+    float: left;
+    display: block;
+    font-size: 1em;
+    color: #666;
+    font-family: inherit;
+    padding: .6em 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    text-indent: .6em;
+    width: 78%;
+    border-radius: 4px;
+}
+
+.search {
+    overflow: auto;
+}
+
+.submit-button {
+    background: #009999;
+    color: #fff;
+    border: none;
+    width: 20%;
+    float: right;
+    text-indent: 0;
+    transition: background 0.15s;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background: #33CCCC;
+    cursor: pointer;
+}
+
+.results,
+.summary {
+    border-top: 1px solid #ddd;
+    margin-top: 1em;
+}
+
+li {
+    color: #ccc;
+    padding: .3em 0;
+}
+
+em {
+    color: #888;
+    font-style: normal;
+}
+
+.error {
+    border: 3px solid #FF7400;
+    color: #FF7400;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.summary em {
+    font-size: 1.2em;
+}

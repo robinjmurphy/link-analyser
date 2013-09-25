@@ -1,0 +1,16 @@
+<% if @relative_links %>
+<h2>Relative links</h2>
+<ul>
+    <% @relative_links.each do |link| %>
+    <%= @link = link; erb :link %>
+    <% end %>
+</ul>
+<% end %>
+<% if @absolute_links %>
+<h2>Absolute links</h2>
+<ul>
+    <% @absolute_links.each do |link| %>
+    <%= @link = link; erb :link %>
+    <% end %>
+</ul>
+<% end %>

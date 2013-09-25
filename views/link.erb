@@ -1,0 +1,7 @@
+<li>
+    <% if @link[:text] && (@link[:text].strip!) != "" %>
+        <a href="<%= @link[:href] %>"><%= @link[:text] %></a>
+        &nbsp; &squarf; &nbsp;
+    <% end %>
+    <em><%= @link[:href] %></em>
+</li>

@@ -1,0 +1,17 @@
+<% if @exception %>
+<p class="error">An error occured: <%= @exception.message %></p>
+<% end %>
+<p>Enter a URL below to view the absolute and relative links in the response. Links loaded/modified using Javascipt are ignored.</p>
+<div class="search">
+    <%= erb :form %>
+</div>
+<% if (@total_link_count && @total_link_count > 0) %>
+<div class="summary">
+    <%= erb :summary %>
+</div>
+<div class="results">
+    <%= erb :links %>
+</div>
+<% elsif (!@exception && @url) %>
+    <p>There were no links found at <em><%= @url %></em></p>
+<% end %>
