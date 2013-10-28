@@ -4,6 +4,7 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 
 require 'sinatra'
 require 'analyser'
+require 'rest-client'
 
 get '/' do
     url = params['url']
